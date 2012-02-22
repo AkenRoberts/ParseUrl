@@ -79,27 +79,13 @@ $badUrl = new ParseUrl($badExample);
 
 <p>Try running <code>getNothing()</code>. It'll throw an Exception.</p>
 
-<?php
 
-/**
- * Here's an example of a URL with no "http://".
- * We can set a boolean property in our class that defines
- * whether or not to auto-fill it in when missing.
- *
- * This is an example of the results if that setting is OFF.
- */
 
-$bad = 'my-website.co.uk';
+<h3>Bad Example URL: <?php echo $badExample; ?></h3>
 
-$url2 = new ParseUrl($bad);
+<p>isValid() Result: <code><?php var_dump($badUrl->isValid()); ?></code></p>
 
-?>
-
-<h3>Bad Example URL: <?php echo $bad; ?></h3>
-
-<p>isValid() Result: <code><?php var_dump($url2->isValid()); ?></code></p>
-
-<p>getError() Result: <code><?php var_dump($url2->getError()); ?></code></p>
+<p>getError() Result: <code><?php var_dump($badUrl->getError()); ?></code></p>
 
 <p>
 	Note that if the class runs into an error, it stops processing at that point.<br>
