@@ -1,8 +1,9 @@
 <?php
 
 /**
- * URL Parsing class. Feed it a URL and it'll spit out its different 
- * parts in handy formats. Designed for basic web URLs.
+ * URL Parsing class. Feed it a web URL and it'll do some basic
+ * structural validation and extract/separate the URL's components
+ * for easy reference.
  *
  * Regarding TLD extensions: the class only validates for
  * three letter domains, 2-2 letter domains (like .co.uk),
@@ -230,3 +231,5 @@ class ParseUrl {
 		return true;
 	}
 }
+
+/* END ParseUrl.php */
