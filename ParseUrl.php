@@ -28,7 +28,7 @@ class ParseUrl {
 	 *
 	 * var	boolean
 	 */
-	protected $_forceHttp = true;
+	protected $_forceHttp = false;
 	
 	/**
 	 * Domain extensions that don't follow the typical
